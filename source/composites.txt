@@ -62,3 +62,4 @@ LtnCapZCaron = LtnCapZ + CombCaron@U |017D
 BulletOperator = MiddleDot |2219
 NonBreakingHyphen = HyphenMinus |2011
 Hyphen_Soft = HyphenMinus |00AD
+LtnCapARingAbvAcute = LtnCapA + CombRingAbv@U + CombAcute@U |01FA

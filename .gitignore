@@ -101,3 +101,4 @@ $RECYCLE.BIN/
 __pycache__/
 
 AndikaMtihani.code-workspace
+*.glyphs

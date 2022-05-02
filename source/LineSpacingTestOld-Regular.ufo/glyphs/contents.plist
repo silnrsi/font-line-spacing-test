@@ -180,6 +180,8 @@
   <string>L_tnC_apA_G_rave.glif</string>
   <key>LtnCapARingAbv</key>
   <string>L_tnC_apA_R_ingA_bv.glif</string>
+  <key>LtnCapARingAbvAcute</key>
+  <string>L_tnC_apA_R_ingA_bvA_cute.glif</string>
   <key>LtnCapATilde</key>
   <string>L_tnC_apA_T_ilde.glif</string>
   <key>LtnCapAe</key>

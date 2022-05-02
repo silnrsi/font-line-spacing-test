@@ -273,6 +273,7 @@
     <string>DblAcuteAccent</string>
     <string>Ogonek</string>
     <string>Caron</string>
+    <string>LtnCapARingAbvAcute</string>
     <string>EuroSgn</string>
     <string>LtnSmEth</string>
     <string>LtnCapEth</string>
@@ -484,6 +485,8 @@
     <string>Agrave</string>
     <key>LtnCapARingAbv</key>
     <string>Aring</string>
+    <key>LtnCapARingAbvAcute</key>
+    <string>Aringacute</string>
     <key>LtnCapATilde</key>
     <string>Atilde</string>
     <key>LtnCapAe</key>
