@@ -9,6 +9,6 @@ getufoinfo('source/LineSpacingTestOld-Regular.ufo')
 
 designspace('source/LineSpacingTestOld.designspace',
                 target = "${DS:FILENAME_BASE}.ttf",
-                #woff = woff('web/${DS:FILENAME_BASE}',
-                #    metadata = f'../source/LineSpacingTestOld-WOFF-metadata.xml'),
+                woff = woff('web/${DS:FILENAME_BASE}',
+                    metadata = f'../source/LineSpacingTestOld-WOFF-metadata.xml'),
     )

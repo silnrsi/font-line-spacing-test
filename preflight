@@ -16,4 +16,7 @@ psfsetpsnames -q -i source/glyph_data.csv source/LineSpacingTestOld-Regular.ufo 
 echo "-----Updating glyph orders in Regular..."
 psfsetglyphorder -q --header sort_final -i source/glyph_data.csv source/LineSpacingTestOld-Regular.ufo -p backup=False -x
 
+echo "-----Updating WOFF metadata..."
+psfmakewoffmetadata -n "linespacingtestold" -i "org.sil.fonts" -o source/LineSpacingTestOld-WOFF-metadata.xml source/LineSpacingTestOld-Regular.ufo
+
 echo "-----Preflight completed!"
