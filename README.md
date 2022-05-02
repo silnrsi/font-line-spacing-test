@@ -41,8 +41,8 @@ You may not know what line metrics your app is using. These fonts enable you to 
 
 3) *Test for clipping:* Add the character Ǻ (U+01FA - Latin Capital A with ring and acute) to your text. Look carefully at the text using each of the fonts. If both the ring and acute appear over the A then no clipping is happening with that font. If the acute (above the ring) is missing then the glyphs are being clipped.
 
-- If clipping is happening with *Old* but not *New* then the new technique will benefit your app.
-- If clipping is happening with *both* fonts then see if explicitly increasing line spacing in your app will reduce the clipping. If that does not work then your app or framework may be using other metrics (possibly *sTypo* or *hhea*, or percentages) to define clipping regions. That's a bad idea. See below for a better option for determining clipping on Windows.  
+    - If clipping is happening with *Old* but not *New* then the new technique will benefit your app.
+    - If clipping is happening with *both* fonts then see if explicitly increasing line spacing in your app will reduce the clipping. If that does not work then your app or framework may be using other metrics (possibly *sTypo* or *hhea*, or percentages) to define clipping regions. That's a bad idea. See below for a better option for determining clipping on Windows.  
 
 4) *Tell us what is happening:* In order to make good decisions regarding our font practices we need to know what apps may be affected by these changes. **Please let us know if your app displays different line spacing with the two fonts, or if you're seeing any clipping.** Write to us using the [font support contact form](https://software.sil.org/fonts/support/) with a subject of "Line spacing tests".
 
