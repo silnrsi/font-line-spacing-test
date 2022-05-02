@@ -3,5 +3,6 @@
 # Produce individual UFOs from Glyphs files
 echo "-----Updating UFOs from Glyphs file..."
 psfglyphs2ufo source/LineSpacingTestOld.glyphs source 
+psfglyphs2ufo source/LineSpacingTestNew.glyphs source 
 
 ./preflight

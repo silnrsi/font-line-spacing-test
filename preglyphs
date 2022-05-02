@@ -1,3 +1,4 @@
 #!/bin/sh
 
 psfufo2glyphs source/LineSpacingTestOld.designspace source/LineSpacingTestOld.glyphs
+psfufo2glyphs source/LineSpacingTestNew.designspace source/LineSpacingTestNew.glyphs

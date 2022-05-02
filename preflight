@@ -2,21 +2,26 @@
 
 # This normalization will also run check and fix routines
 echo "-----Normalizing UFOs..."
-psfnormalize -p checkfix=fix source/LineSpacingTestOld-Regular.ufo     &
+psfnormalize -p checkfix=fix source/LineSpacingTestOld-Regular.ufo
+psfnormalize -p checkfix=fix source/LineSpacingTestNew-Regular.ufo
 wait
 
 # Building composites - needs to be done after normalization or may complain due to bad anchor coordinates
 echo "-----Building composites..."
-psfbuildcomp -q -i source/composites.txt source/LineSpacingTestOld-Regular.ufo     &
+psfbuildcomp -q -i source/composites.txt source/LineSpacingTestOld-Regular.ufo
+psfbuildcomp -q -i source/composites.txt source/LineSpacingTestNew-Regular.ufo
 wait
 
 echo "-----Updating production names in Regular..."
 psfsetpsnames -q -i source/glyph_data.csv source/LineSpacingTestOld-Regular.ufo -p backup=False -x
+psfsetpsnames -q -i source/glyph_data.csv source/LineSpacingTestNew-Regular.ufo -p backup=False -x
 
 echo "-----Updating glyph orders in Regular..."
 psfsetglyphorder -q --header sort_final -i source/glyph_data.csv source/LineSpacingTestOld-Regular.ufo -p backup=False -x
+psfsetglyphorder -q --header sort_final -i source/glyph_data.csv source/LineSpacingTestNew-Regular.ufo -p backup=False -x
 
 echo "-----Updating WOFF metadata..."
 psfmakewoffmetadata -n "linespacingtestold" -i "org.sil.fonts" -o source/LineSpacingTestOld-WOFF-metadata.xml source/LineSpacingTestOld-Regular.ufo
+psfmakewoffmetadata -n "linespacingtestnew" -i "org.sil.fonts" -o source/LineSpacingTestNew-WOFF-metadata.xml source/LineSpacingTestNew-Regular.ufo
 
 echo "-----Preflight completed!"
