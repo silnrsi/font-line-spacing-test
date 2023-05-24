@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata version="1.0">
   <uniqueid id="org.sil.fonts.linespacingtestnew.1.000" />
-  <vendor name="SIL International" url="https://scripts.sil.org" />
+  <vendor name="SIL International" url="https://www.sil.org" />
   <credits>
     <credit
       name="Victor Gaultney, Annie Olsen, Nicolas Spalinger, Alan Ward"
-      url="https://scripts.sil.org"
+      url="https://software.sil.org/wstech/"
       role="Design and engineering"
     />
   </credits>
@@ -14,11 +14,11 @@
       Line Spacing Test New is a font for testing application line spacing and clipping.
     </text>
   </description>
-  <license url="http://scripts.sil.org/OFL" id="org.sil.ofl.1.1">
+  <license url="https://scripts.sil.org/OFL" id="org.sil.ofl.1.1">
     <text lang="en">
-      Copyright (c) 2004-2022 SIL International (http://www.sil.org/) with Reserved Font Names "Andika" and "SIL".
+      Copyright (c) 2004-2022 SIL International (https://www.sil.org/) with Reserved Font Names "Andika" and "SIL".
       
-      This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+      This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: https://scripts.sil.org/OFL
       
       
       -----------------------------------------------------------
